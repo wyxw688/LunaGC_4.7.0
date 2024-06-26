@@ -44,7 +44,7 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x ./gradlew
       - name: lenquan
-        run: sed -i 's#grasscutter.io#gmyxs.github.io#g' src/main/java/emu/grasscutter/game/Account.java && sed -i 's#10000#166600000#g' src/main/java/emu/grasscutter/database/DatabaseCounter.java && sed -i 's#欢迎使用 Grasscutter#冷权公益4.6原神GC指令服#g' src/main/resources/languages/zh-CN.json && sed -i 's#Traveler#冷权#g' src/main/java/emu/grasscutter/game/player/Player.java && sed -i 's#this.signature = "#this.signature = "官方QQ群563867095,公益游戏,请勿倒卖#g' src/main/java/emu/grasscutter/game/player/Player.java && rm -rf src/main/resources/lua/UID.luac
+        run: sed -i 's#grasscutter.io#gmyxs.github.io#g' src/main/java/emu/grasscutter/game/Account.java && sed -i 's#10000#166600000#g' src/main/java/emu/grasscutter/database/DatabaseCounter.java && sed -i 's#欢迎使用 Grasscutter#冷权公益4.7原神GC指令服#g' src/main/resources/languages/zh-CN.json && sed -i 's#Traveler#冷权#g' src/main/java/emu/grasscutter/game/player/Player.java && sed -i 's#this.signature = "#this.signature = "官方QQ群563867095,公益游戏,请勿倒卖#g' src/main/java/emu/grasscutter/game/player/Player.java && rm -rf src/main/resources/lua/UID.luac
       - name: Run Gradle
         run: ./gradlew -PskipHandbook=1 && ./gradlew jar -PskipHandbook=1
       - name: Upload build
